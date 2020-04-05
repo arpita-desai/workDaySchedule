@@ -6,5 +6,8 @@ var displayDay = dateDay.toString().slice(0,15);
 presentDay.text(`${displayDay}`);
 //console.log(displayDay);
 
+var textArea = $("#textArea");
+var saveBtn = $(".saveBtn");
+
 
 

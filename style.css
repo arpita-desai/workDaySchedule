@@ -15,6 +15,10 @@ textarea{
 
 }
 
+#task{
+  border-top: #000000 1px solid;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -42,7 +46,6 @@ textarea{
   margin: 0em;
   padding: 0em;
 }
-
 
 
 .hour {
@@ -74,8 +77,12 @@ textarea{
   color: white;
 }
 
+i{
+  font-size: 40px;
+}
+
 .saveBtn i:hover {
-  font-size: 20px;
+  font-size: 60px;
   transition: all .3s ease-in-out;
 }
 
