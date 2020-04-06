@@ -7,9 +7,51 @@ var displayDay = dateDay.toString().slice(0,15);
 presentDay.text(`${displayDay}`);
 //console.log(displayDay);
 
-var textArea = $(".textArea");
-var saveBtn = $(".saveBtn");
- 
+
+var saveTaskBtn = $(".saveBtn");
+
+var taskDes = $(".description");
 
 
 
+function getTask(){
+  var task = localStorage.getItem("task");
+     if(task === null){
+          return;
+    }
+    console.log("get task---"+task);
+   taskDes.text(task);
+   alert(task);
+}
+
+saveTaskBtn.on("click", function(event){
+    event.preventDefault();
+    
+
+    var task = $(".description").val();
+    
+    console.log(task);
+    if(task === ""){
+        return alert("Enter task");
+    }else {
+        console.log("else loop---"+task);
+        localStorage.setItem("task", task);
+        getTask();
+    }
+});
+
+getTime();
+
+function getTime(){
+   
+    var currentHour = dateDay.getHours();
+    console.log(currentHour);
+    
+    var time = $(".time-block").attr("data-time");
+     
+          if(time){
+
+          }  
+        
+
+}
