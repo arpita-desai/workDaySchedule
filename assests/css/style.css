@@ -87,3 +87,22 @@ i{
   font-size: 60px;
   transition: all .3s ease-in-out;
 }
+
+.reset_schedule{
+  background-color: #f44336; 
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+.reset_schedule:hover {
+  background-color: #ff6961;
+  color: white;
+}

@@ -32,4 +32,10 @@ $(".saveBtn").on("click", function () {
     let value = $(".description").eq(i).val().trim();
     localStorage.setItem(currentID, value);
   }
+  //alert("Task Saved: "+value);
+});
+
+$(".reset_schedule").on("click", function () {
+  $(".description").empty();
+  localStorage.clear();
 });
