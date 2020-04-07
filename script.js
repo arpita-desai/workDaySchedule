@@ -47,11 +47,24 @@ function getTime(){
     var currentHour = dateDay.getHours();
     console.log(currentHour);
     
-    var time = $(".time-block").attr("data-time");
+    
+    
      
-          if(time){
 
-          }  
+    $('.time-block').each(function() {
+        var dataTime = $(this).data('time');
+        console.log(dataTime);
         
+        if(dataTime < currentHour){
+            $(".task").addClass("past");
+        }else if(dataTime === currentHour){
+            $(".task").addClass("present");
+        }else {
+            $(".task").addClass("future");
+        }
+    });
+
+
 
 }
+
